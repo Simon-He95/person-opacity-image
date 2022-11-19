@@ -28,7 +28,7 @@ onMounted(() => getPersonOpacityImage(video.value, setDanmu))
 <template>
   <div text-center>
     <div relative inline-flex overflow-hidden>
-      <video ref="video" muted crossOrigin="anonymous" autoplay width="400" height="400" src="http://vcdnb.huoying666.com/new_video/2020/0227/72df8765bf4f717432dd87ae628883d5/v720/72df8765b1_5078640_hd.mp4" />
+      <video ref="video" controls muted crossOrigin="anonymous" width="400" height="400" src="http://vcdnb.huoying666.com/new_video/2020/0227/72df8765bf4f717432dd87ae628883d5/v720/72df8765b1_5078640_hd.mp4" />
       <div ref="danmu" class="danmu-wrapper" absolute w-full h-full top-0 left-0 />
     </div>
   </div>

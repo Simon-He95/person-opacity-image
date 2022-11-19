@@ -37,15 +37,17 @@ export async function getPersonOpacityImage(_video: HTMLVideoElement, callback: 
   }
   net = await loadBodyPix()
   if (video.src) {
-    video.onloadedmetadata = video.play
     video.addEventListener(
       'play',
       () => {
         initCanvas()
         setInterval(() => drawCanvas(callback), 0)
       }
-      , false,
-    )
+      , false)
+    video.onloadedmetadata = video.play
+    video.play()
+    window.addEventListener('click', () => (video.muted = false))
+    window.removeEventListener('click', () => (video.muted = false))
   }
   else {
     navigator.mediaDevices
