@@ -1,6 +1,9 @@
 ## person-opacity-image
 实时获取视频中人物的透明base64图片
 
+https://user-images.githubusercontent.com/57086651/202853837-7ccb3a8a-ea90-42e5-9aef-904b0091d5a0.mov
+
+
 ## Install
 ```bash
 npm install @simon_he/person-opacity-image
